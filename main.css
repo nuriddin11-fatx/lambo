@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAvbar Goes Here */
+nav, ul{
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+}
+nav{
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+ul {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    padding: 12px;
+}
+.open-btn {
+    display: none;
+    border: 0;
+    outline: 0;
+    padding: 12px;
+    background: transparent;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .open-btn{
+        display: block!important;
+        color: white;
+    }
+    
+    nav ul { 
+            display: none;
+    }
+    nav {
+justify-content: space-between;
+padding: 25px;
+    }
+}
+/* NAvbar Goes Here */
+#hero {
+    background-image: url("https://wallpapercave.com/wp/IfkafN6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+}
+.container {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.parent a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 25px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.parent .child h1 {
+    font-size: 75px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.parent .child p{
+    margin-bottom: 35px;
+    color: rgba(255, 255, 255, 0.6);
+}
